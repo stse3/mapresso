@@ -3,5 +3,9 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,       // Fixes CommonJS/ESM interop
+    "allowSyntheticDefaultImports": true  // Allows default imports from modules without a default export
+  }
 }
